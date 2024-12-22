@@ -1,86 +1,57 @@
-/* Geral */
+/* Fundo cromado azul */
 body {
     background: linear-gradient(135deg, #1e90ff 25%, #87cefa 75%);
     height: 100vh;
     margin: 0;
-    color: #333; /* Cor escura para melhor contraste com o fundo claro */
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    color: rgb(34, 136, 34); /* Verde escuro */
-    font-size: 2.5em;
-}
-
-h2 {
-    color: rgb(29, 3, 3); /* Cor escura para destacar sobre o fundo claro */
-    font-size: 1.5em;
-    margin-top: 20px;
-}
-
-/* Navbar */
+/* Navbar e cabeçalho */
 nav {
     background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
     font-weight: bold;
-    color: #007bff; /* Azul para o nome da marca */
 }
 
-.navbar-brand:hover {
-    color: #0056b3; /* Azul mais escuro no hover */
+/* Estilos de título */
+h1 {
+    color: rgb(34, 136, 34);
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
+h2 {
+    color: rgb(29, 3, 3);
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
-.search-container input {
-    width: 250px;
-}
-
-.user-icon {
-    margin-left: 15px;
-}
-
-/* Cards */
+/* Imagem responsiva */
 .card-img-top {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
+/* Cartões */
 .card-body {
     padding: 1.5rem;
-    color: #333; /* Cor escura para o texto do card */
 }
 
-.card-title {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #007bff; /* Cor azul para os títulos dos cards */
-}
-
-/* Layout */
+/* Footer */
 footer {
     background-color: #f8f9fa;
     padding: 1rem 0;
 }
 
+/* Estilos de texto do footer */
 .footer-text {
-    color: #6c757d; /* Cinza claro para o texto do rodapé */
-}
-
-.main-content {
-    padding: 2rem 0;
+    color: #6c757d;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .search-container {
+    .d-flex {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -89,19 +60,4 @@ footer {
         display: block;
         margin-top: 10px;
     }
-
-    .card-body {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-}
-
-/* Melhorias de Acessibilidade */
-input:focus,
-button:focus {
-    outline: 2px solid #007bff;
-    outline-offset: 2px;
 }
