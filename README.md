@@ -23,4 +23,4 @@ Este repositório contém o código-fonte de um site para uma farmácia online. 
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/usuario/farmacia-online.git
+   git clone https://gabrielv2103.github.io/Site01/
