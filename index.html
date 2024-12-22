@@ -4,47 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FarmaSaúde</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fundo cromado azul */
+        body {
+            background: linear-gradient(135deg, #1e90ff 25%, #87cefa 75%);
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Navbar e estilos do cabeçalho */
+        nav {
+            background: #ffffff;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        /* Cor dos h1 */
+        h1 {
+            color: rgb(34, 136, 34);
+        }
+
+        /* Estilo para h2 */
+        h2 {
+            color: rgb(29, 3, 3);
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Imagem responsiva */
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Ajustes de margens e paddings */
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+        }
+
+        .footer-text {
+            color: #6c757d;
+        }
+
+        /* Ajustes para responsividade */
+        @media (max-width: 768px) {
+            .search-container {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .user-icon {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">FarmaSaúde</div>
-            <div class="search-container">
-                <input type="text" placeholder="Search" />
-                <button>🔍</button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">FarmaSaúde</a>
+                <div class="search-container d-flex ms-auto">
+                    <input type="text" class="form-control me-2" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-primary">🔎</button>
+                </div>
+                <div class="user-icon">
+                    <button class="btn btn-outline-secondary" aria-label="Perfil de usuário">👤</button>
+                </div>
             </div>
-            <div class="user-icon">👤</div>
         </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
         <section class="intro">
             <h1>Leia sobre</h1>
         </section>
 
         <section class="content">
-            <article class="card">
-                <h2>Boas Práticas Farmacêuticas</h2>
-                <p>As Boas Práticas (BPF) são um conjunto de procedimentos e diretrizes que garantem a qualidade e a segurança dos produtos farmacêuticos em todas as etapas...</p>
-            </article>
+            <div class="row">
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imagens/istockphoto-1247438360-2048x2048.jpg" class="card-img-top" alt="Imagem relacionada a boas práticas farmacêuticas">
+                        <div class="card-body">
+                            <h2 class="card-title">Boas Práticas Farmacêuticas</h2>
+                            <p class="card-text">As Boas Práticas (BPF) são um conjunto de procedimentos e diretrizes que garantem a qualidade e a segurança dos produtos farmacêuticos em todas as etapas...</p>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="card">
-                <h2>Avanços Científicos e Inovação</h2>
-                <p>A ciência farmacêutica tem avançado significativamente nas últimas décadas, impactando positivamente a medicina e a saúde pública...</p>
-            </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imagens/istockphoto-1301443426-2048x2048.jpg" class="card-img-top" alt="Imagem sobre avanços científicos">
+                        <div class="card-body">
+                            <h2 class="card-title">Avanços Científicos e Inovação</h2>
+                            <p class="card-text">A ciência farmacêutica tem avançado significativamente nas últimas décadas, impactando positivamente a medicina e a saúde pública...</p>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="card">
-                <h2>Regulamentação Farmacêutica</h2>
-                <p>A regulamentação farmacêutica garante a segurança, a eficácia e a qualidade dos medicamentos e dispositivos médicos...</p>
-            </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imagens/istockphoto-1354171846-2048x2048.jpg" class="card-img-top" alt="Imagem sobre regulamentação farmacêutica">
+                        <div class="card-body">
+                            <h2 class="card-title">Regulamentação Farmacêutica</h2>
+                            <p class="card-text">As regulamentações visam garantir a segurança, a eficácia e a qualidade dos medicamentos disponíveis no mercado. A ANVISA é responsável por supervisionar a fabricação...</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 FarmaSaúde. Todos os direitos reservados.</p>
+        <div class="container text-center">
+            <p class="footer-text">&copy; 2024 FarmaSaúde. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

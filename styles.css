@@ -1,157 +1,100 @@
+/* Geral */
 body {
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e90ff 25%, #87cefa 75%);
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-header {
-    background-color: #333;
     color: white;
-    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+h1 {
+    color: rgb(34, 136, 34);
+    font-size: 2.5em;
 }
 
-.navbar .logo {
+h2 {
+    color: rgb(29, 3, 3);
     font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Navbar */
+nav {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
     font-weight: bold;
-    flex: 1;
 }
 
 .search-container {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .search-container input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 80%;
-}
-
-.search-container button {
-    padding: 5px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    width: 18%;
-}
-
-.search-container button:hover {
-    background-color: #444;
+    width: 250px;
 }
 
 .user-icon {
-    font-size: 1.5em;
+    margin-left: 15px;
 }
 
-main {
-    padding: 20px;
-}
-
-.intro h1 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 280px;
-}
-
-.card h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 0.9em;
-    color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
+/* Cards */
+.card-img-top {
     width: 100%;
-    bottom: 0;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Responsividade para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.card-body {
+    padding: 1.5rem;
+}
 
+.card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Layout */
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+.footer-text {
+    color: #6c757d;
+}
+
+.main-content {
+    padding: 2rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
     .search-container {
-        flex-direction: column;
         width: 100%;
-    }
-
-    .search-container input,
-    .search-container button {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsividade para telas menores */
-@media screen and (max-width: 480px) {
-    .intro h1 {
-        font-size: 1.5em;
-    }
-
-    .card h2 {
-        font-size: 1em;
-    }
-
-    .card p {
-        font-size: 0.8em;
-    }
-
-    .navbar .logo {
-        font-size: 1.2em;
-    }
-
-    footer {
-        font-size: 0.8em;
+        margin-bottom: 10px;
     }
 
     .user-icon {
-        font-size: 2em;  /* Aumentar o ícone do usuário */
+        display: block;
+        margin-top: 10px;
     }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Melhorias de Acessibilidade */
+input:focus,
+button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
 }
