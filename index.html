@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FarmaSaúde</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ola mundo</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FarmaSaúde</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search" />
+                <button>🔍</button>
+            </div>
+            <div class="user-icon">👤</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Leia sobre</h1>
+        </section>
+
+        <section class="content">
+            <article class="card">
+                <h2>Boas Práticas Farmacêuticas</h2>
+                <p>As Boas Práticas (BPF) são um conjunto de procedimentos e diretrizes que garantem a qualidade e a segurança dos produtos farmacêuticos em todas as etapas...</p>
+            </article>
+
+            <article class="card">
+                <h2>Avanços Científicos e Inovação</h2>
+                <p>A ciência farmacêutica tem avançado significativamente nas últimas décadas, impactando positivamente a medicina e a saúde pública...</p>
+            </article>
+
+            <article class="card">
+                <h2>Regulamentação Farmacêutica</h2>
+                <p>A regulamentação farmacêutica garante a segurança, a eficácia e a qualidade dos medicamentos e dispositivos médicos...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FarmaSaúde. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
