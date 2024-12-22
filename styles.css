@@ -92,3 +92,56 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container input {
+        width: 80%;
+        margin-right: 5px;
+    }
+
+    .search-container button {
+        width: 20%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 480px) {
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .card h2 {
+        font-size: 1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
