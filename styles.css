@@ -3,17 +3,17 @@ body {
     background: linear-gradient(135deg, #1e90ff 25%, #87cefa 75%);
     height: 100vh;
     margin: 0;
-    color: white;
+    color: #333; /* Cor escura para melhor contraste com o fundo claro */
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    color: rgb(34, 136, 34);
+    color: rgb(34, 136, 34); /* Verde escuro */
     font-size: 2.5em;
 }
 
 h2 {
-    color: rgb(29, 3, 3);
+    color: rgb(29, 3, 3); /* Cor escura para destacar sobre o fundo claro */
     font-size: 1.5em;
     margin-top: 20px;
 }
@@ -26,6 +26,11 @@ nav {
 
 .navbar-brand {
     font-weight: bold;
+    color: #007bff; /* Azul para o nome da marca */
+}
+
+.navbar-brand:hover {
+    color: #0056b3; /* Azul mais escuro no hover */
 }
 
 .search-container {
@@ -50,11 +55,13 @@ nav {
 
 .card-body {
     padding: 1.5rem;
+    color: #333; /* Cor escura para o texto do card */
 }
 
 .card-title {
     font-size: 1.25em;
     font-weight: bold;
+    color: #007bff; /* Cor azul para os títulos dos cards */
 }
 
 /* Layout */
@@ -64,7 +71,7 @@ footer {
 }
 
 .footer-text {
-    color: #6c757d;
+    color: #6c757d; /* Cinza claro para o texto do rodapé */
 }
 
 .main-content {
